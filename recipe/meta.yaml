@@ -10,8 +10,8 @@ source:
   sha256: 23aee7418edf5c2e90b3f9f15931563b07ded8c59de386ae654b403322430ad9
 
 build:
-  number: 1
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 2
+  script: {{ PYTHON }} -m pip install . -vv --no-deps
   skip: True  # [(py27) or (win and vc<14)]
 
 requirements:
@@ -20,19 +20,28 @@ requirements:
   host:
     - pip
     - python
-    - spacy >=2.1.0
+    - wheel
+    - jsonschema >=2.6.0,<3.0.0a0
+    - spacy {{ spacy }}
   run:
     - python
     - boto3
-    - numpy
     - requests
-    - spacy >=2.1.0
+    - jsonschema >=2.6.0,<3.0.0a0
+    - spacy {{ spacy }}
 
 test:
+  requires:
+    - pip
+    - pytest
+    - spacy-model-en_core_web_sm >=2.1,<2.2.0a0
   imports:
     - neuralcoref
     - neuralcoref.tests
     - neuralcoref.train
+  commands:
+    - pytest --pyargs neuralcoref
+    - pip check
 
 about:
   home: https://github.com/huggingface/neuralcoref
