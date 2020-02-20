@@ -29,129 +29,45 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_python3.6spacy2.1.1</td>
+              <td>linux_python3.6</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9030&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=linux&configuration=linux_python3.6spacy2.1.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=linux&configuration=linux_python3.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_python3.6spacy2.1.2</td>
+              <td>linux_python3.7</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9030&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=linux&configuration=linux_python3.6spacy2.1.2" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=linux&configuration=linux_python3.7" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_python3.6spacy2.1.3</td>
+              <td>osx_python3.6</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9030&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=linux&configuration=linux_python3.6spacy2.1.3" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=osx&configuration=osx_python3.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_python3.7spacy2.1.1</td>
+              <td>osx_python3.7</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9030&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=linux&configuration=linux_python3.7spacy2.1.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=osx&configuration=osx_python3.7" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_python3.7spacy2.1.2</td>
+              <td>win_cxx_compilervs2015python3.6vc14</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9030&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=linux&configuration=linux_python3.7spacy2.1.2" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=win&configuration=win_cxx_compilervs2015python3.6vc14" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_python3.7spacy2.1.3</td>
+              <td>win_cxx_compilervs2015python3.7vc14</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9030&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=linux&configuration=linux_python3.7spacy2.1.3" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_python3.6spacy2.1.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9030&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=osx&configuration=osx_python3.6spacy2.1.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_python3.6spacy2.1.2</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9030&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=osx&configuration=osx_python3.6spacy2.1.2" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_python3.6spacy2.1.3</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9030&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=osx&configuration=osx_python3.6spacy2.1.3" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_python3.7spacy2.1.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9030&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=osx&configuration=osx_python3.7spacy2.1.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_python3.7spacy2.1.2</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9030&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=osx&configuration=osx_python3.7spacy2.1.2" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_python3.7spacy2.1.3</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9030&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=osx&configuration=osx_python3.7spacy2.1.3" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_cxx_compilervs2015python3.6spacy2.1.1vc14</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9030&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=win&configuration=win_cxx_compilervs2015python3.6spacy2.1.1vc14" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_cxx_compilervs2015python3.6spacy2.1.2vc14</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9030&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=win&configuration=win_cxx_compilervs2015python3.6spacy2.1.2vc14" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_cxx_compilervs2015python3.6spacy2.1.3vc14</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9030&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=win&configuration=win_cxx_compilervs2015python3.6spacy2.1.3vc14" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_cxx_compilervs2015python3.7spacy2.1.1vc14</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9030&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=win&configuration=win_cxx_compilervs2015python3.7spacy2.1.1vc14" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_cxx_compilervs2015python3.7spacy2.1.2vc14</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9030&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=win&configuration=win_cxx_compilervs2015python3.7spacy2.1.2vc14" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_cxx_compilervs2015python3.7spacy2.1.3vc14</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9030&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=win&configuration=win_cxx_compilervs2015python3.7spacy2.1.3vc14" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neuralcoref-feedstock?branchName=master&jobName=win&configuration=win_cxx_compilervs2015python3.7vc14" alt="variant">
                 </a>
               </td>
             </tr>
