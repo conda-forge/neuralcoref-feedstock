@@ -11,7 +11,7 @@ source:
 
 build:
   number: 1
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps
   skip: True  # [(py27) or (win and vc<14)]
 
 requirements:
@@ -20,19 +20,27 @@ requirements:
   host:
     - pip
     - python
-    - spacy >=2.1.0
+    - jsonschema >=2.6.0,<3.0.0a0
+    - spacy >=2.1.1,<2.1.4a0
   run:
     - python
     - boto3
-    - numpy
     - requests
-    - spacy >=2.1.0
+    - jsonschema >=2.6.0,<3.0.0a0
+    - spacy >=2.1.1,<2.1.4a0
 
 test:
+  requires:
+    - pip
+    - pytest
+    - spacy-model-en_core_web_sm >=2.1,<2.2.0a0
   imports:
     - neuralcoref
     - neuralcoref.tests
     - neuralcoref.train
+  commands:
+    - pytest --pyargs neuralcoref
+    - pip check
 
 about:
   home: https://github.com/huggingface/neuralcoref
