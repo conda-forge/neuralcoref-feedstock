@@ -22,7 +22,7 @@ requirements:
     - python
     - wheel
     - jsonschema >=2.6.0,<3.0.0a0
-    - spacy =2.1.1
+    - spacy >=2.1.1,<2.1.4a0
   run:
     - python
     - boto3
