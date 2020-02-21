@@ -10,7 +10,7 @@ source:
   sha256: 23aee7418edf5c2e90b3f9f15931563b07ded8c59de386ae654b403322430ad9
 
 build:
-  number: 2
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps
   skip: True  # [(py27) or (win and vc<14)]
 
@@ -20,7 +20,6 @@ requirements:
   host:
     - pip
     - python
-    - wheel
     - jsonschema >=2.6.0,<3.0.0a0
     - spacy >=2.1.1,<2.1.4a0
   run:
