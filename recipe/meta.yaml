@@ -10,7 +10,7 @@ source:
   sha256: 23aee7418edf5c2e90b3f9f15931563b07ded8c59de386ae654b403322430ad9
 
 build:
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv --no-deps
   skip: True  # [(py27) or (win and vc<14)]
 
@@ -19,11 +19,11 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - pip
-    - python
+    - python <3.8
     - jsonschema >=2.6.0,<3.0.0a0
     - spacy >=2.1.1,<2.1.4a0
   run:
-    - python
+    - python <3.8
     - boto3
     - requests
     - jsonschema >=2.6.0,<3.0.0a0
@@ -53,6 +53,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - mxr-conda
     - oblute
     - benhuff
     - rluria14
