@@ -19,11 +19,11 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - pip
-    - python <3.8
+    - python 
     - jsonschema >=2.6.0,<3.0.0a0
     - spacy >=2.1.1,<2.1.4a0
   run:
-    - python <3.8
+    - python
     - boto3
     - requests
     - jsonschema >=2.6.0,<3.0.0a0
