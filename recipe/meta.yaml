@@ -28,7 +28,7 @@ requirements:
     - python
     - boto3
     - requests
-    - numpy >=1.15.0
+    - numpy >=1.16.0
     - requests >=2.13.0,<3.0.0
    #- jsonschema >=2.6.0,<3.0.0a0
     - spacy >=2.1.1
@@ -37,7 +37,7 @@ test:
   requires:
     - pip
     - pytest
-    - spacy-model-en_core_web_sm >=2.1,<2.2.0a0
+    #- spacy-model-en_core_web_sm >=2.1,<2.2.0a0
   imports:
     - neuralcoref
     - neuralcoref.tests
