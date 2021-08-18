@@ -24,7 +24,7 @@ requirements:
     - python 
     - wheel
     - jsonschema >=2.6.0,<3.0.0a0
-    - spacy >=2.1.0,<3.0.0
+    - spacy {{ spacy }}
   run:
     - python
     - boto3
@@ -32,7 +32,7 @@ requirements:
     - numpy >=1.15.0
     - requests >=2.13.0,<3.0.0
     - jsonschema >=2.6.0,<3.0.0a0
-    - spacy >=2.1.0,<3.0.0
+    - spacy {{ spacy }}
 
 test:
   requires:
