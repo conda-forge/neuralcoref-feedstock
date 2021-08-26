@@ -8,13 +8,11 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 23aee7418edf5c2e90b3f9f15931563b07ded8c59de386ae654b403322430ad9
-  patches:
-    - 0001_py8_py9.patch
 
 build:
   number: 3
   script: {{ PYTHON }} -m pip install . -vv --no-deps
-  skip: True  # [(win and vc<14)]
+  skip: True  # [(py27) or (win and vc<14)]
 
 requirements:
   build:
@@ -24,21 +22,20 @@ requirements:
     - python 
     - wheel
     - jsonschema >=2.6.0,<3.0.0a0
-    - spacy {{ spacy }}
+    - spacy >=2.1.1,<2.1.4a0
   run:
     - python
     - boto3
     - requests
-    - numpy >=1.15.0
-    - requests >=2.13.0,<3.0.0
+    - requests 
     - jsonschema >=2.6.0,<3.0.0a0
-    - spacy {{ spacy }}
+    - spacy >=2.1.1,<2.1.4a0
 
 test:
   requires:
     - pip
     - pytest
-    - spacy-model-en_core_web_sm >=2.1.0,<3.0.0
+    - spacy-model-en_core_web_sm >=2.1,<2.2.0a0
   imports:
     - neuralcoref
     - neuralcoref.tests
@@ -59,6 +56,4 @@ about:
 extra:
   recipe-maintainers:
     - mxr-conda
-    - oblute
-    - benhuff
-    - rluria14
+    - d-cunningham
