@@ -10,8 +10,8 @@ source:
   sha256: 23aee7418edf5c2e90b3f9f15931563b07ded8c59de386ae654b403322430ad9
 
 build:
-  number: 2
-  script: {{ PYTHON }} -m pip install . -vv --no-deps
+  number: 3
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   skip: True  # [(py27) or (win and vc<14)]
 
 requirements:
@@ -20,20 +20,22 @@ requirements:
   host:
     - pip
     - python
-    - jsonschema >=2.6.0,<3.0.0a0
-    - spacy >=2.1.1,<2.1.4a0
+    - wheel
+    - jsonschema >=2.6.0
+    - spacy >=2.1.0
   run:
     - python
+    - numpy >=1.15.0
     - boto3
     - requests
-    - jsonschema >=2.6.0,<3.0.0a0
-    - spacy >=2.1.1,<2.1.4a0
+    - jsonschema >=2.6.0
+    - spacy >=2.1.0
 
 test:
   requires:
     - pip
     - pytest
-    - spacy-model-en_core_web_sm >=2.1,<2.2.0a0
+    - spacy-model-en_core_web_sm >=2.1
   imports:
     - neuralcoref
     - neuralcoref.tests
