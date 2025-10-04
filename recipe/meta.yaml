@@ -12,14 +12,16 @@ source:
 build:
   number: 3
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  skip: true  # [py<38 or win]
+  skip: true  # [py<310 or win]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
   host:
-    - pip
     - python
+    - pip
+    - setuptools
     - wheel
     - jsonschema >=2.6.0
     - spacy >=2.1.0
@@ -58,3 +60,4 @@ extra:
     - oblute
     - benhuff
     - rluria14
+    - rxm7706
